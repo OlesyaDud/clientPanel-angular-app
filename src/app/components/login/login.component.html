@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body">
+                    <h3 class="text-center pb-4 pt-3">
+                       <span class="text-primary"> <i class="bi bi-file-lock2-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                            <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
+                            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
+                          </svg></i> Client Panel </span>Login
+                    </h3>
+
+                    <form (submit)="onSubmit()">
+                        <!-- email -->
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input 
+                            type="email" 
+                            name="email"
+                            [(ngModel)]="email"
+                            required
+                            class="form-control">
+                        </div>
+                        <!-- password -->
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input 
+                            type="password" 
+                            name="password"
+                            [(ngModel)]="password"
+                            required
+                            class="form-control">
+                        </div>
+                        <!-- submit -->
+                        <input type="submit" value="login" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
